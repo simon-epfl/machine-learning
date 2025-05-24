@@ -2,7 +2,7 @@ import gensim.downloader as api
 
 model = api.load("glove-wiki-gigaword-50")
 
-# pizza - italy = france - ?
+# pizza - italy = korea - ?
 result = model.most_similar(positive=["pizza", "korea"], negative=["italy"], topn=5)
 
 for word, score in result:
